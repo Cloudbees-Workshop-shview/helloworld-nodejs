@@ -43,6 +43,9 @@ pipeline {
           }
           when {
             environment name: 'FAVORITE_COLOR', value: 'BLUE'
+            beforeInput true
+          }          when {
+            environment name: 'FAVORITE_COLOR', value: 'BLUE'
           }
           input {
             message "Should we continue with deployment?"
